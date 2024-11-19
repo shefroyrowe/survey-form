@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Awesome Survey</h1>
+    <p id="description">How awesome did you find us!</p>
+  
+    <form id="survey-form" action="#" method="post">
+  
+      <fieldset>
+        <label id="name-label">Name<input type="text" id="name" required placeholder="Jane doe" /></label>
+        <label id="email-label">Email<input type="email" id="email" required placeholder="email@email.com" /></label>
+        <label id="number-label">Age<input type="number" id="number" min="13" max="120" placeholder="35" /></label>
+      </fieldset>
+  
+      <label for="dropdown">
+        Where did you hear about us?
+        <select id="dropdown">
+          <option>(select)</option>
+          <option>School</option>
+          <option>Webinar</option>
+          <option>Friend</option>
+          <option>Other</option>
+        </select>
+      </label>
+  
+      <fieldset>
+        <legend>Will you recommend us to other students?</legend>
+        <label for="recommend-us"><input id="recommend-us" type="radio" name="recommend-us" value="yes" class="inline" />Yes</label>
+        <label for="recommend-us"><input id="recommend-us" type="radio" name="recommend-us" value="no" class="inline" />No</label>
+        <label for="recommend-us"><input id="recommend-us" type="radio" name="recommend-us" value="not-sure" class="inline" />Not sure</label>
+      </fieldset>
+  
+      <fieldset>
+        <legend>How likely are you to work with us again?</legend>
+        <label for="rating"><input type="checkbox" name="rating" id="rating" value="0" class="inline" />0%</label>
+        <label for="rating"><input type="checkbox" name="rating" id="rating" value="5" class="inline" />5%</label>
+        <label for="rating"><input type="checkbox" name="rating" id="rating" value="10" class="inline" />10%</label>
+        <label for="rating"><input type="checkbox" name="rating" id="rating" value="20" class="inline" />20%</label>
+        <label for="rating"><input type="checkbox" name="rating" id="rating" value="30" class="inline" />30%</label>
+        <label for="rating"><input type="checkbox" name="rating" id="rating" value="40" class="inline" />40%</label>
+      </fieldset>
+  
+      <fieldset>
+        <legend>How can we improve at Camp Awesome?</legend>
+        <textarea rows="4" cols="38" placeholder="It all started when I was..."></textarea>
+      </fieldset>
+  
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
